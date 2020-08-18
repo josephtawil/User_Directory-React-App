@@ -2,7 +2,7 @@ import {useState} from 'react'
 
 const useUserModel = () => {
     
-    const [nameState, setNameState] = useState("");
+    const [nameState, setNameState] = useState("Joseph");
 
     return {
         error: nameState === "" ? "Please enter a name value" : "",
