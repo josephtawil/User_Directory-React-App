@@ -7,23 +7,17 @@ const List = () => {
 console.log(users.name)
     const names = ["Joseph","John","Jack","Jacob","Josh"];
 
-    // const filterList = () => {
-    //     names.filter((name) => {
-    //         if(users.name.value === name){
-    //           return (<li>hello</li>)
-    //         }
-
-    //     });
-    // }
-
     return (
-        <div>
-            <ul>
+            <div className="row" style={{padding: '20px'}}>
+                    <div className="col-3" style={{border: '1px solid', width: '100px'}}>
+                        <h4 style={{'marginLeft': '35px'}}>Employees</h4>
+                    <ul>
               {names.filter((filteredName)=> filteredName.includes(users.name.value)).map((name, index) =>{
-                  return(<li key={index}>{name}</li>)
+                  return(<li style={{'listStyleType': 'none'}} key={index}>{name}</li>)
               })}
             </ul>
-        </div>
+                    </div>
+            </div>
     )
 }
 
