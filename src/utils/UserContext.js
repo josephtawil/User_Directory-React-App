@@ -5,6 +5,14 @@ const UserContext = React.createContext({
         value: "",
         onChange: ()=>{},
     },
+    image: {
+        value: "",
+        onChange: ()=>{},
+    },
+    email: {
+        value: "",
+        onChange: ()=>{},
+    }
 })
 
 export default UserContext
